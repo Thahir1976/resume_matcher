@@ -1,0 +1,14 @@
+crewai
+streamlit
+openai
+PyPDF2
+crewai_tools
+databricks-sdk
+python-docx
+python-docx
+python-Levenshtein
+fuzzywuzzy
+scikit-learn
+fpdf
+python-dotenv
+
