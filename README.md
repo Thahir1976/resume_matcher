@@ -1,10 +1,10 @@
-AI Resume Matcher & Optimizer
+# **AI Resume Matcher & Optimizer**
 
-Overview
+## Overview
 
 The AI Resume Matcher & Optimizer is a Streamlit-based application that helps users optimize their resumes by comparing them with job descriptions. It extracts key skills from the job description and enhances the resume accordingly while providing a match score.
 
-Features
+## Features
 
 Extracts text from uploaded resumes and job descriptions (PDF, DOCX, TXT)
 
@@ -18,65 +18,73 @@ Generates an optimized resume with highlighted keyword matches
 
 Allows download of the optimized resume in both DOCX and PDF formats
 
-Requirements
+## Requirements
 
-Python 3.8+
+* Python 3.8+
 
-Required Python libraries:
+* Required Python libraries:
 
-pip install streamlit PyPDF2 python-docx fuzzywuzzy fpdf crewai_tools openai dotenv
+        `pip install streamlit PyPDF2 python-docx fuzzywuzzy fpdf crewai_tools openai dotenv`
 
-OpenAI API Key
+* OpenAI API Key
 
-Serper API Key
+* Serper API Key
 
-Installation & Setup
+## Installation & Setup
 
-Clone the repository:
+### 1. Clone the repository:
 
-git clone https://github.com/your-username/resume-matcher.git
-cd resume-matcher
+      `git clone https://github.com/your-username/resume-matcher.git`
 
-Install dependencies:
+      `cd resume-matcher`
 
-pip install -r requirements.txt
+### 2. Install dependencies:
 
-Set up API Keys:
+      `pip install -r requirements.txt`
 
-Create a .env file in the project root.
+### 3. Set up API Keys:
 
-Add your OpenAI and Serper API keys:
+* Create a .env file in the project root.
 
-OPENAI_API_KEY=your_openai_api_key
-SERPER_API_KEY=your_serper_api_key
+* Add your OpenAI and Serper API keys:
 
-Run the application:
+  `OPENAI_API_KEY=your_openai_api_key`
+        
+  `SERPER_API_KEY=your_serper_api_key`
 
-streamlit run app.py
+### 4. Run the application:
 
-Usage
 
-Open the application in the browser.
+    `streamlit run app.py`
 
-Upload your resume and job description.
+## Usage
 
-Click "Optimize Resume" to extract keywords and generate an optimized version.
+1. Open the application in the browser.
 
-View match score and download the updated resume in DOCX/PDF format.
+2. Upload your resume and job description.
 
-File Structure
+3. Click "Optimize Resume" to extract keywords and generate an optimized version.
 
-resume-matcher/
-│── app.py                 # Main application script
-│── requirements.txt       # Dependencies
-│── .env.example          # API key template (DO NOT share actual .env file)
-│── README.md              # Project documentation
+4. View match score and download the updated resume in DOCX/PDF format.
 
-License
+## File Structure
+
+
+`resume-matcher/`
+
+`│── app.py                 # Main application script`
+
+`│── requirements.txt       # Dependencies`
+
+`│── .env.example          # API key template (DO NOT share actual .env file)`
+
+`│── README.md              # Project documentation`
+`
+## License
 
 This project is licensed under the MIT License.
 
-Acknowledgments
+## Acknowledgments
 
 Built with OpenAI GPT, Serper API, Streamlit, and NLP techniques for job application optimization.
 
